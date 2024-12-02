@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #1b1b1b;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #f6ff00 !important;
+}
+
+/* Body background and review container styling */
+body {
+    background-color: #121212;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.review-container {
+    min-height: calc(100vh - 140px);
+    /* Adjust for navbar and footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Review card styling */
+.review-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 600px;
+    transition: transform 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.reviewer-name {
+    color: #f6ff00 !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.stars {
+    font-size: 1.5rem;
+    color: #ffc107;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.stars:hover {
+    color: #ffdd57;
+    transform: scale(1.1);
+}
+
+/* Image inside review card */
+.reviewer-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Carousel controls styling */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+/* maps */
+section{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    color: white;
+}
+.box{
+    max-width: 600px;
+}
+
+h1{
+    font-size: 4em;
+}
+
+/* p{
+    display:none;
+} */
+
+iframe{
+    border-radius: 2em;
+    border: none;
+    width: 500px;
+    height: 500px;
+    opacity: 0.7;
+    transition: 0.3 ease-in-out;
+}
+
+iframe:hover{
+    transform: scale(1.1);
+    opacity: 1;
+
+}
+
+/* Footer styling */
+footer {
+    background-color: #1b1b1b;
+    color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

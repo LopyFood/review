@@ -36,6 +36,7 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 20px;
+    padding-bottom: 60px;
 }
 
 /* Review card styling */
@@ -125,12 +126,14 @@ h1{
 } */
 
 iframe{
+    margin-top: -20px;
     border-radius: 2em;
     border: none;
     width: 500px;
     height: 500px;
     opacity: 0.7;
     transition: 0.3 ease-in-out;
+    margin-bottom: 50px;
 }
 
 iframe:hover{
@@ -145,7 +148,7 @@ footer {
     color: #f8f8f8;
     padding: 20px;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
